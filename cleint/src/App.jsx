@@ -6,6 +6,8 @@ import About from './pages/About';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 
+
+
 export default function App() {
   return (
     <BrowserRouter>
