@@ -48,7 +48,7 @@ export default function Listing() {
     };
     fetchListing();
   }, [params.listingId]);
-// TODO: start form 8:09:26
+
   return (
     <main>
       {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
@@ -105,7 +105,7 @@ export default function Listing() {
               </p>
               {listing.offer && (
                 <p className='bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
-                  ${+listing.regularPrice - +listing.discountPrice}
+                  ${+listing.regularPrice - +listing.discountPrice}OFF
                 </p>
               )}
             </div>
